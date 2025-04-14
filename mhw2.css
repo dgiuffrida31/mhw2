@@ -1,0 +1,722 @@
+body{
+    background-color:#545454;
+    overflow-x: hidden;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+body a{
+    text-decoration: none;
+}
+
+body h1{
+    font-size: 36px;
+}
+
+header{
+    display: flex;
+    z-index:300;
+    position: fixed;
+    top:0;
+    background-color:black;
+    opacity: 70%;
+    border-radius: 20px;
+    left:0.5%;
+    right: 0.5%;
+    align-items: center;
+    padding: 13px 14px;
+    justify-content: space-between;
+}
+
+.hidden{
+    display: none;
+}
+
+.nothidden{
+    display: flex;
+}
+
+.logo{
+    position: relative;
+    height: auto;
+    width: 9%;
+    align-items: center;
+    left: 0.5%;
+    z-index: 400;
+}
+
+.logo img{
+    height: auto;
+    width: 100%;
+}
+
+.navigazione{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbar{
+    position: relative;
+    gap:15px;
+    left: 10%;
+    right: 10%;
+}
+
+#navbar a{
+    padding: 14px 14px;
+    color: white;
+    text-align: center;
+}
+
+#navbar a:hover{
+    background-color: white;
+    color:black;
+    border-radius: 20px;
+}
+
+#navbar a:active{
+    background-color: orange;
+    color:white;
+}
+
+#search_bar{
+    overflow: hidden;
+    position: relative;
+    background-color:orange;
+    border-radius: 60px;
+    left:10%;
+    width: auto;
+}
+
+#search_bar input{
+    border:none;
+    background-color:orange;
+    align-items: center;
+    padding: 10px 10px;
+    width: 400px;
+}
+
+#search_bar button{
+    border:none;
+    background-color:orange;
+    padding: 10px 10px;
+}
+
+#search_bar input:hover{
+    background-color: #A36A00;
+}
+
+#search_bar button:hover{
+    background-color: #A36A00;
+}
+
+#closenav{
+   height: 40px;
+    width: 40px;
+}
+
+#closenav img{
+    width: 100%;
+    height: 100%;
+}
+
+#closemenu{
+    height: 50px;
+     width: 50px;
+ }
+ 
+ #closemenu img{
+     width: 100%;
+     height: 100%;
+ }
+
+#search_none{
+    position: relative;
+    left:10%;
+}
+
+#search_none button{
+    border:none;
+    background-color:orange;
+    align-items: center;
+    padding: 10px 10px;
+    border-radius: 60px;
+}
+
+#search_none button:hover{
+    background-color: #A36A00;
+}
+
+#search_none button:active{
+    background-color: #754C00;
+}
+
+.account{
+    display: flex;
+    align-items: center;
+    gap:3%;
+}
+
+.carello{
+    background-color: white;
+    margin-right: 1%;
+    border-radius: 10px;
+    width: 50px;
+    height: 40px;
+    padding: 3px 3px;
+}
+
+.carello img{
+    width: 100%;
+    height: 100%;
+}
+
+.carello img:hover{
+    background-color: #A36A00;
+    border-radius: 10px;
+}
+
+.carello img:active{
+    background-color: #754C00;
+    border-radius: 10px;
+}
+
+.accesso button{
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    padding: 14px 14px;
+    border: none;
+    width: 50px;
+    height: 50px;
+} 
+
+.accesso img{
+    width: 100%;
+    height: 100%;
+}
+
+.accesso button:hover{
+    background-color: #A36A00;
+    padding: 14px 14px;
+}
+
+.accesso button:active{
+  background-color:orange;
+  color:white;
+}
+
+#bottonnonav{
+    display: none;
+    align-items: center;
+    margin: 5px 0;
+}
+
+#bottonnonav button{
+    border-radius: 30px;
+    padding: 10px 10px;
+    border: none;
+}
+
+#bottonnonav img{
+    width: 15px;
+    height: 15px;
+}
+
+#nonav{
+    flex-direction: column;
+    position: fixed;
+    background-color: #414141;
+    top: 0%;
+    left: 0%;
+    width: 100%;    
+    height: 100%;
+    align-items: center;
+    gap: 2%;
+}
+
+#nonav a{
+    color: white;
+    text-decoration: none;
+    margin-top: 100px;
+    gap:2%;
+    top:40%;
+}
+
+#nonav a:active{
+    color:#754C00;
+}
+
+#search_bar_smartphone{
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    background-color:orange;
+    border-radius: 60px;
+    align-items: center;
+    top: 10%;
+}
+
+#search_bar_smartphone input{
+    border:none;
+    background-color:orange;
+    align-items: center;
+    padding: 10px 10px;
+    width: 400px;
+    top:0;
+}
+
+#search_bar_smartphone button{
+    border:none;
+    background-color:orange;
+    padding: 10px 10px;
+}
+
+#search_bar_smartphone input:hover{
+    background-color: #A36A00;
+}
+
+#search_bar_smartphone button:hover{
+    background-color: #A36A00;
+}
+
+.offprinc{
+    position: relative;
+    left: 0;
+    right: 0.5%;
+}
+
+.offprinc img{
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+    max-height: 75  0px;
+}
+
+.infooff{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 35%;
+    left: 3%;
+    gap:1%;
+
+}
+
+.infooff h2{
+    color:white;
+}
+
+.infooff span{
+    background-color: orange;
+    color:white;
+    border-radius: 30px;
+    font-size: 60px;
+}
+
+.infooff:hover{
+    opacity: 80%;
+}
+
+.infooff p{
+    color:white;
+    font-size: 40px;
+}
+
+.vendita{
+    color:whitesmoke;
+}
+
+.games{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.offerte{
+    position: relative;
+    top:80%;
+    left: 3%;
+}
+
+.offerte img{
+    height: 70%;
+    width: 80%;
+    align-items: center;
+    border-radius: 10px;
+    z-index: 300;
+}
+
+.offerte p{
+    font-size: 28px;
+    position: relative;
+    width: 80%;
+    margin-top: 1%;
+}
+
+.offerte:hover{
+    color: gray;
+    opacity: 80%;
+}
+
+.sconto{
+    position: absolute;
+    top:0%;
+    left:1%;
+    color:white;
+    background-color: orange;
+    font-size: 36px;
+}
+
+.prezzo{
+    font-size: 28px;
+    position: relative;
+    font-weight: bold;
+    font-size: 28px;
+    display: inline;
+    margin-left: 10%;
+}
+
+article{
+    border-top:2px solid white;
+    color:white;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+.sezionerecensione{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.recensione{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 1px;
+    width: 700px;
+}
+
+.copertinagioco{
+    position: relative;
+    height: 40%;
+    width: 50%;
+    border-radius: 20px;
+}
+
+.utente{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+}
+
+.avatar{
+    height: 10%;
+    width: 10%;
+    border-radius: 60px;
+    align-items: center;
+}
+
+.like{
+    height: 5%;
+    width: 5%;
+    background-color:green;
+    border-radius: 60px;
+}
+
+footer{
+    border-top:2px solid white;
+    color:white;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 200px;
+    overflow: hidden;
+    align-items: center;
+}
+
+.final{
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logob{
+    height: 5%;
+    width: 13%;
+}
+
+.condizione{
+    display: flex;
+    flex-direction: column;
+    gap:10%;
+}
+
+.condizione a{
+    color:white;
+}
+
+.condizione a:hover{
+    color:#A36A00;
+}
+
+.condizione a:active{
+    color:#754C00;
+}
+
+.social{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:3%;
+    position: relative;
+    right: 1%;
+}
+
+
+.fb{
+    background-color: blue;
+    padding: 10px 18px;
+    border-radius: 30px;
+}
+
+.fb:hover{
+    background-color: #003366;
+}
+
+.fb:active{
+    background-color: #00264c;
+}
+
+.ig{
+    background-color: magenta;
+    padding: 10px 10px;
+    border-radius: 30px;
+}
+
+.ig:hover{
+    background-color: #990099;
+}
+
+.ig:active{
+    background-color: #660066;
+}
+
+.tw{
+    background-color: purple;
+    padding: 10px 10px;
+    border-radius: 30px;
+}
+
+.tw:hover{
+    background-color: #590059;
+}
+
+.tw:active{
+    background-color: #400040;
+}
+
+#menuregistrazione{
+    z-index: 400;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    top: 0%;
+    left: 0%;
+}
+
+.registrazione{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #545454;
+    top: 0%;
+    left: 0%;
+    width: 50%;
+    height: 100%;
+    gap: 10%;
+    color:white;
+}
+
+.loginveloce{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+
+.google{
+
+    background-color: white;
+    padding: 10px 10px;
+    border-radius: 30px;
+
+}
+
+.google:hover{
+    background-color: darkgray;
+}
+
+.google:active{
+    background-color: gray;
+}
+
+.loginnormale{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border: none;
+}
+
+.loginnormale input{
+    background-color: darkgray;
+    color: black;
+    border-radius: 30px;
+    padding: 10px 10px;
+    margin-top: 5%;
+    width: 300px;
+}
+
+.loginnormale input:hover{
+    background-color: #cccccc;
+}
+
+.loginnormale button{
+    background-color: #A36A00;
+    color: black;
+    border-radius: 30px;
+    padding: 10px 10px;
+    margin-top: 5%;
+    width: 300px;
+}
+
+.loginnormale button:hover{
+    background-color: #754C00;
+}
+
+.loginnormale a{
+    color:white;
+    margin-top: 5%;
+}
+
+.loginnormale a:hover{
+    color:#A36A00;
+}
+
+.loginnormale a:active{
+    color:#754C00;
+}
+
+.wallpaper{
+    width: 50%;
+    height: 100%;
+}
+
+.wallpaper img{
+    width: 100%;
+    height: 100%;
+}
+
+.closebutton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    width: 30px;
+    height: 30px;
+}
+
+@media (max-width:700px) {
+    .navigazione{
+        display: none;
+    }
+    
+    .account, #bottonnonav {
+        display: flex; 
+        align-items: center;
+    }
+
+    #search_bar_smartphone{
+        max-width: 100%;
+    }
+
+    #search_bar_smartphone input{
+        max-width: 100%;
+    }
+
+    .logo{
+        width: 25%;
+    }
+
+    #bottonnonav{
+        display: block;
+    }
+
+    .offprinc{
+        flex: 0 0 auto;
+    }
+
+    .offprinc img{
+        width: 100%; 
+        height: auto;
+        max-height: 600px;
+    }
+    
+    .infooff{
+        flex-direction:unset;
+        justify-content: space-between;
+    }
+    
+    .infooff span{
+        font-size: 1.5em;
+    }
+
+    .games{
+        overflow-x: auto;
+    }
+
+    .offerte{
+        flex: 0 0 auto;
+        width: 80%;
+    }
+
+    .sezionerecensione{
+        overflow-x: auto;
+    }
+
+    .recensione{
+        flex: 0 0 auto;
+        width: 80%;
+    }
+
+    .final{
+        flex-direction: column;
+        flex: 0 0 auto;
+        align-items: center;
+        width: 80%;
+        gap:20%;
+    }
+
+    .logob{
+        width: 50%;
+        height: 40%;
+    }
+    .registrazione{
+        width: 100%;
+        height: 100%;
+    }
+    .wallpaper{
+        display: none;
+    }
+}
